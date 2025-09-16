@@ -8,6 +8,17 @@ const imagem = document.getElementById('foto')
 let foto_t = false
 
 
+imagem.addEventListener('click', ()=>{
+    if(foto_t === false){
+        imagem.src = 'pokedex.png';
+        foto_t = true
+    }else{
+        imagem.src = 'teste.jpg'
+        foto_t = false;
+    }
+})
+
+
 
 
 
