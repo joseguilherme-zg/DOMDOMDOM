@@ -1,3 +1,18 @@
+function mudaCor(novaCor) {
+    var elemento = document.getElementById("para1");
+    elemento.style.backgroundColor = novaCor;
+    elemento.style.display = 'inline';
+};
+
+const imagem = document.getElementById('foto')
+let foto_t = false
+
+
+
+
+
+
+
 const rodri_circulo = document.getElementById('circulo')
 let tamanho_rodri = 10
 
