@@ -38,7 +38,16 @@ form.addEventListener("submit", (event)=>{
        p.innerHTML = '<h1> Olá, Mundo </h1>'
        p.style.display = 'block'
    }
-})
+});
+
+const container = document.getElementById('fotos')
+const imagens = container.getElementsByTagName('img');
+
+container.addEventListener('click', ()=> {
+    for (let i = 0; i < imagens.length; i++) {
+        imagens[i].src = `baixados(${i + 5}).jpg`;
+    }
+});
 
 
 
