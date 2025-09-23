@@ -16,7 +16,7 @@ imagem.addEventListener('click', ()=>{
        imagem.src = 'pokedex.png';
        foto_t = true
    }else{
-       imagem.src = 'teste.jpg'
+       imagem.src = 'MiniSonic.png'
        foto_t = false;
    }
 })
