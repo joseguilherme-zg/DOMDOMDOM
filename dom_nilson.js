@@ -46,8 +46,13 @@ const imagens = container.getElementsByTagName('img');
 container.addEventListener('click', ()=> {
     for (let i = 0; i < imagens.length; i++) {
         imagens[i].src = `baixados(${i + 5}).jpg`;
-    }
-});
+        foto_troca = true;
+    }}else{
+        for (let i = 0; i < imagens.length; i++) {
+            imagens[i].src = `baixados(${i+2}).jpg`;
+            foto_troca = false;
+        }}
+    });
 
 
 
