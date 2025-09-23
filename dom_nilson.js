@@ -28,7 +28,7 @@ const section = document.getElementById('sc')
 
 form.addEventListener("submit", (event)=>{
    event.preventDefault();
-   input=form.querySelector('input')
+    var input=form.querySelector('input')
    if(parseInt(input.value) < 24 ||isNaN(input.value) ){
        var p = section.querySelector('p')
        p.innerText = "Professor é mais velho"
